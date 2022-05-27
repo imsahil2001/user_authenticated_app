@@ -1,0 +1,133 @@
+$green:#7CD745;
+
+.login-body {
+  height: 90vh;
+  background: #1f1f1f;
+  padding-top: 6rem;
+}
+
+.login-box {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  background: #262626;
+  height: 90%;
+  border-top-right-radius: .3rem;
+  border-top-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  border-left: 3px solid $green;
+  margin: 0 auto;
+  width: 25.5%;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: $green;
+    font-size: 89%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .03rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14%;
+      height: 8%;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 1rem;
+      background: $green;
+    }
+  }
+}
+
+.login-form {
+  font-size: 1rem;
+  color: white;
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  margin: 5rem auto;
+  flex-direction: column;
+  align-items: center;
+
+  label {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    font-size: 110%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+    border-radius: .1rem;
+    font-weight: 500;
+    padding: .5rem .8rem;
+    background: #363636;
+    outline: 0;
+    border: 0;
+    // margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.login-submit-btn {
+  margin-top: 1.4rem !important;
+  width: 98.5%;
+  height: 2.4rem;
+  font-family: 'Montserrat', sans-serif !important;
+  background: #7CD745 !important;
+  border-radius: 4px;
+  color: black !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  display: flex;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+@media (max-width:1100px) {
+  .login-box {
+    width: 38.2%;
+  }
+}
+
+@media (max-width:850px) {
+  .login-box {
+    width: 45.2%;
+
+
+  }
+}
+
+@media (max-width:505px) {
+  .login-box {
+    width: 69%;
+
+    h1 {
+      font-size: 74%;
+      font-weight: 500;
+    }
+
+    input {
+      font-size: 101%;
+    }
+  }
+
+  .login-form {
+    label {
+      font-size: .88rem;
+    }
+  }
+
+  .login-submit-btn {
+    font-size: .8rem !important;
+    height: 2.2rem;
+  }
+}

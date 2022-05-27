@@ -1,0 +1,125 @@
+nav {
+  background-color: #1F1F1F;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  width: 42%;
+  height: 10vh;
+}
+
+.nav-list li .btn {
+  background-color: #0000;
+  color: #f0f0f0 !important;
+  font-size: 16px;
+  text-transform: capitalize !important;
+  border-radius: .22rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.nav-list li .btn:hover {
+  border-bottom: 1px solid #7CD745;
+  background-color: #333333 !important;
+}
+
+.nav-link {
+  padding-bottom: 4px !important;
+  color: #e2e2e2 !important;
+  text-decoration: none;
+  letter-spacing: .03rem;
+}
+
+.nav-link:focus-within {
+  border-bottom: 1px solid white;
+  font-weight: 500;
+}
+
+@media (max-width: 1300px) {
+  nav {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  nav {
+    padding: 0 4rem;
+  }
+  .nav-list {
+    width: 53%;
+  }
+}
+
+@media (max-width: 960px) {
+  nav {
+    padding: 0 2rem;
+  }
+  .nav-list {
+    width: 70%;
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .nav-list {
+    padding: 20px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav-list li {
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 510px) {
+  .nav-link {
+    font-size: 92% !important;
+    letter-spacing: normal;
+  }
+  nav h2 {
+    font-size: 132%;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

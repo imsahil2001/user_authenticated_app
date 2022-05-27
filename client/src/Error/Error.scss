@@ -1,0 +1,47 @@
+.error-body {
+  background: #1F1F1F;
+  height: 90vh;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-box {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.error-background {
+  z-index: 1;
+  color: #242424;
+  position: absolute;
+  font-size: 801.6%;
+  top: 14.6rem;
+}
+
+.error-heading {
+  position: relative;
+  z-index: 10;
+  font-size: 145%;
+  font-weight: 600;
+  color: white;
+}
+
+.error-paragraph {
+  position: relative;
+  z-index: 10;
+  font-size: 51.6%;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.6rem;
+  line-height: 25.6px;
+  width: 40%;
+}
